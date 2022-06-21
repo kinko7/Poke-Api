@@ -1,0 +1,12 @@
+const server = require("./src/app.js");
+//requiero app y arranco la app
+const { conn } = require("./src/db.js");
+
+
+
+// Sincronizo los modelos
+conn.sync({ truncate : false}).then(() => {
+  server.listen(3001, () => {    
+    console.log("%s listening at 3001");  
+  });
+});
