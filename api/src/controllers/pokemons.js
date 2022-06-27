@@ -26,7 +26,7 @@ const consult = async (req, res) => {
 
 const sync = async (req, res) => {
   try {
-    const urlApi = await axios.get("http://pokeapi.co/api/v2/pokemon?limit=10");
+    const urlApi = await axios.get("http://pokeapi.co/api/v2/pokemon?limit=5");
     let details = await Promise.all(
       urlApi.data.results.map(async (el) => await axios(el.url))
     );
@@ -34,6 +34,11 @@ const sync = async (req, res) => {
       return {
         id: el.data.id,
         name: el.data.name,
+        hp: el.data.hp,
+
+        speed: el.data.speed,
+        height: el.data.height,
+        weight: el.data.weight,
         img: el.data.sprites.other.dream_world.front_default,
         attack: el.data.stats[1].base_stat,
         defense: el.data.stats[2].base_stat,
@@ -42,13 +47,14 @@ const sync = async (req, res) => {
         }),
       };
     });
+    console.log("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", details);
     await Pokemons.bulkCreate(details);
 
     return res.json(details);
   } catch (error) {
     console.log(error);
   }
-}
+};
 
 const getAllPokemons = async (req, res) => {
   let name = req.query.name;
@@ -72,15 +78,21 @@ const getAllPokemons = async (req, res) => {
 const getBytype = async (req, res) => {
   const { name } = req.query;
   try {
-    const filterPoke = [];
-
-    pokes.map((poke) => {
-      return poke.types?.map((type) => {
-        if (type.name === name) {
-          filterPoke.push(poke);
-        }
-      });
-    });
+    
+ const filterPoke = await Pokemons.findAll({
+  where:{ name},
+   include: {
+        model: Types,
+        attributes: ["name"],
+      },
+})
+    // pokes.map((poke) => {
+    //   return poke.types?.map((type) => {
+    //     if (type.name === name) {
+    //       filterPoke.push(poke);
+    //     }
+    //   });
+    // });
     return res.send(filterPoke);
   } catch (error) {
     console.log(error);
