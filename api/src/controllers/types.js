@@ -15,9 +15,10 @@ const getTypes = async (req, res) => {
       Types.bulkCreate(types);
       return res.json(types);
     }
+
     res.json(dbTypes);
-  } catch (e) {
-    console.log(e);
+  } catch (error) {
+    console.log(error);
   }
 };
 
