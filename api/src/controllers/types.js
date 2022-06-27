@@ -21,8 +21,8 @@ const getTypes = async (req, res) => {
   try {
     const dbTypes = await Types.findAll({ attributes: ["name", "id"] });
     if (dbTypes.length === 0) {
-      let res = await axios.get("https://pokeapi.co/api/v2/type");
-      var types = res.data.results.map((el) => {
+      let response = await axios.get("https://pokeapi.co/api/v2/type");
+      var types = response.data.results.map((el) => {
         return { name: el.name };
       });
 
