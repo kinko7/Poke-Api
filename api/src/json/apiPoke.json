@@ -1,693 +1,693 @@
 [
-   {
-     "id": 1,
-     "name": "bulbasaur",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg",
-     "height": 7,
-     "weight": 69,
-     "hp": 45,
-     "attack": 49,
-     "defense": 49,
-     "speed": 45,
-     "types": [
-       {
-         "name": "grass"
-       },
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 2,
-     "name": "ivysaur",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg",
-     "height": 10,
-     "weight": 130,
-     "hp": 60,
-     "attack": 62,
-     "defense": 63,
-     "speed": 60,
-     "types": [
-       {
-         "name": "grass"
-       },
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 3,
-     "name": "venusaur",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg",
-     "height": 20,
-     "weight": 1000,
-     "hp": 80,
-     "attack": 82,
-     "defense": 83,
-     "speed": 80,
-     "types": [
-       {
-         "name": "grass"
-       },
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 4,
-     "name": "charmander",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg",
-     "height": 6,
-     "weight": 85,
-     "hp": 39,
-     "attack": 52,
-     "defense": 43,
-     "speed": 65,
-     "types": [
-       {
-         "name": "fire"
-       }
-     ]
-   },
-   {
-     "id": 5,
-     "name": "charmeleon",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg",
-     "height": 11,
-     "weight": 190,
-     "hp": 58,
-     "attack": 64,
-     "defense": 58,
-     "speed": 80,
-     "types": [
-       {
-         "name": "fire"
-       }
-     ]
-   },
-   {
-     "id": 6,
-     "name": "charizard",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg",
-     "height": 17,
-     "weight": 905,
-     "hp": 78,
-     "attack": 84,
-     "defense": 78,
-     "speed": 100,
-     "types": [
-       {
-         "name": "fire"
-       },
-       {
-         "name": "flying"
-       }
-     ]
-   },
-   {
-     "id": 7,
-     "name": "squirtle",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg",
-     "height": 5,
-     "weight": 90,
-     "hp": 44,
-     "attack": 48,
-     "defense": 65,
-     "speed": 43,
-     "types": [
-       {
-         "name": "water"
-       }
-     ]
-   },
-   {
-     "id": 8,
-     "name": "wartortle",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg",
-     "height": 10,
-     "weight": 225,
-     "hp": 59,
-     "attack": 63,
-     "defense": 80,
-     "speed": 58,
-     "types": [
-       {
-         "name": "water"
-       }
-     ]
-   },
-   {
-     "id": 9,
-     "name": "blastoise",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/9.svg",
-     "height": 16,
-     "weight": 855,
-     "hp": 79,
-     "attack": 83,
-     "defense": 100,
-     "speed": 78,
-     "types": [
-       {
-         "name": "water"
-       }
-     ]
-   },
-   {
-     "id": 10,
-     "name": "caterpie",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/10.svg",
-     "height": 3,
-     "weight": 29,
-     "hp": 45,
-     "attack": 30,
-     "defense": 35,
-     "speed": 45,
-     "types": [
-       {
-         "name": "bug"
-       }
-     ]
-   },
-   {
-     "id": 11,
-     "name": "metapod",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/11.svg",
-     "height": 7,
-     "weight": 99,
-     "hp": 50,
-     "attack": 20,
-     "defense": 55,
-     "speed": 30,
-     "types": [
-       {
-         "name": "bug"
-       }
-     ]
-   },
-   {
-     "id": 12,
-     "name": "butterfree",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/12.svg",
-     "height": 11,
-     "weight": 320,
-     "hp": 60,
-     "attack": 45,
-     "defense": 50,
-     "speed": 70,
-     "types": [
-       {
-         "name": "bug"
-       },
-       {
-         "name": "flying"
-       }
-     ]
-   },
-   {
-     "id": 13,
-     "name": "weedle",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/13.svg",
-     "height": 3,
-     "weight": 32,
-     "hp": 40,
-     "attack": 35,
-     "defense": 30,
-     "speed": 50,
-     "types": [
-       {
-         "name": "bug"
-       },
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 14,
-     "name": "kakuna",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/14.svg",
-     "height": 6,
-     "weight": 100,
-     "hp": 45,
-     "attack": 25,
-     "defense": 50,
-     "speed": 35,
-     "types": [
-       {
-         "name": "bug"
-       },
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 15,
-     "name": "beedrill",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/15.svg",
-     "height": 10,
-     "weight": 295,
-     "hp": 65,
-     "attack": 90,
-     "defense": 40,
-     "speed": 75,
-     "types": [
-       {
-         "name": "bug"
-       },
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 16,
-     "name": "pidgey",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/16.svg",
-     "height": 3,
-     "weight": 18,
-     "hp": 40,
-     "attack": 45,
-     "defense": 40,
-     "speed": 56,
-     "types": [
-       {
-         "name": "normal"
-       },
-       {
-         "name": "flying"
-       }
-     ]
-   },
-   {
-     "id": 17,
-     "name": "pidgeotto",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/17.svg",
-     "height": 11,
-     "weight": 300,
-     "hp": 63,
-     "attack": 60,
-     "defense": 55,
-     "speed": 71,
-     "types": [
-       {
-         "name": "normal"
-       },
-       {
-         "name": "flying"
-       }
-     ]
-   },
-   {
-     "id": 18,
-     "name": "pidgeot",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/18.svg",
-     "height": 15,
-     "weight": 395,
-     "hp": 83,
-     "attack": 80,
-     "defense": 75,
-     "speed": 101,
-     "types": [
-       {
-         "name": "normal"
-       },
-       {
-         "name": "flying"
-       }
-     ]
-   },
-   {
-     "id": 19,
-     "name": "rattata",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/19.svg",
-     "height": 3,
-     "weight": 35,
-     "hp": 30,
-     "attack": 56,
-     "defense": 35,
-     "speed": 72,
-     "types": [
-       {
-         "name": "normal"
-       }
-     ]
-   },
-   {
-     "id": 20,
-     "name": "raticate",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/20.svg",
-     "height": 7,
-     "weight": 185,
-     "hp": 55,
-     "attack": 81,
-     "defense": 60,
-     "speed": 97,
-     "types": [
-       {
-         "name": "normal"
-       }
-     ]
-   },
-   {
-     "id": 21,
-     "name": "spearow",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/21.svg",
-     "height": 3,
-     "weight": 20,
-     "hp": 40,
-     "attack": 60,
-     "defense": 30,
-     "speed": 70,
-     "types": [
-       {
-         "name": "normal"
-       },
-       {
-         "name": "flying"
-       }
-     ]
-   },
-   {
-     "id": 22,
-     "name": "fearow",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/22.svg",
-     "height": 12,
-     "weight": 380,
-     "hp": 65,
-     "attack": 90,
-     "defense": 65,
-     "speed": 100,
-     "types": [
-       {
-         "name": "normal"
-       },
-       {
-         "name": "flying"
-       }
-     ]
-   },
-   {
-     "id": 23,
-     "name": "ekans",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/23.svg",
-     "height": 20,
-     "weight": 69,
-     "hp": 35,
-     "attack": 60,
-     "defense": 44,
-     "speed": 55,
-     "types": [
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 24,
-     "name": "arbok",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/24.svg",
-     "height": 35,
-     "weight": 650,
-     "hp": 60,
-     "attack": 95,
-     "defense": 69,
-     "speed": 80,
-     "types": [
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 25,
-     "name": "pikachu",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg",
-     "height": 4,
-     "weight": 60,
-     "hp": 35,
-     "attack": 55,
-     "defense": 40,
-     "speed": 90,
-     "types": [
-       {
-         "name": "electric"
-       }
-     ]
-   },
-   {
-     "id": 26,
-     "name": "raichu",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/26.svg",
-     "height": 8,
-     "weight": 300,
-     "hp": 60,
-     "attack": 90,
-     "defense": 55,
-     "speed": 110,
-     "types": [
-       {
-         "name": "electric"
-       }
-     ]
-   },
-   {
-     "id": 27,
-     "name": "sandshrew",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/27.svg",
-     "height": 6,
-     "weight": 120,
-     "hp": 50,
-     "attack": 75,
-     "defense": 85,
-     "speed": 40,
-     "types": [
-       {
-         "name": "ground"
-       }
-     ]
-   },
-   {
-     "id": 28,
-     "name": "sandslash",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/28.svg",
-     "height": 10,
-     "weight": 295,
-     "hp": 75,
-     "attack": 100,
-     "defense": 110,
-     "speed": 65,
-     "types": [
-       {
-         "name": "ground"
-       }
-     ]
-   },
-   {
-     "id": 29,
-     "name": "nidoran-f",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/29.svg",
-     "height": 4,
-     "weight": 70,
-     "hp": 55,
-     "attack": 47,
-     "defense": 52,
-     "speed": 41,
-     "types": [
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 30,
-     "name": "nidorina",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/30.svg",
-     "height": 8,
-     "weight": 200,
-     "hp": 70,
-     "attack": 62,
-     "defense": 67,
-     "speed": 56,
-     "types": [
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 31,
-     "name": "nidoqueen",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/31.svg",
-     "height": 13,
-     "weight": 600,
-     "hp": 90,
-     "attack": 92,
-     "defense": 87,
-     "speed": 76,
-     "types": [
-       {
-         "name": "poison"
-       },
-       {
-         "name": "ground"
-       }
-     ]
-   },
-   {
-     "id": 32,
-     "name": "nidoran-m",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/32.svg",
-     "height": 5,
-     "weight": 90,
-     "hp": 46,
-     "attack": 57,
-     "defense": 40,
-     "speed": 50,
-     "types": [
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 33,
-     "name": "nidorino",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/33.svg",
-     "height": 9,
-     "weight": 195,
-     "hp": 61,
-     "attack": 72,
-     "defense": 57,
-     "speed": 65,
-     "types": [
-       {
-         "name": "poison"
-       }
-     ]
-   },
-   {
-     "id": 34,
-     "name": "nidoking",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/34.svg",
-     "height": 14,
-     "weight": 620,
-     "hp": 81,
-     "attack": 102,
-     "defense": 77,
-     "speed": 85,
-     "types": [
-       {
-         "name": "poison"
-       },
-       {
-         "name": "ground"
-       }
-     ]
-   },
-   {
-     "id": 35,
-     "name": "clefairy",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/35.svg",
-     "height": 6,
-     "weight": 75,
-     "hp": 70,
-     "attack": 45,
-     "defense": 48,
-     "speed": 35,
-     "types": [
-       {
-         "name": "fairy"
-       }
-     ]
-   },
-   {
-     "id": 36,
-     "name": "clefable",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/36.svg",
-     "height": 13,
-     "weight": 400,
-     "hp": 95,
-     "attack": 70,
-     "defense": 73,
-     "speed": 60,
-     "types": [
-       {
-         "name": "fairy"
-       }
-     ]
-   },
-   {
-     "id": 37,
-     "name": "vulpix",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/37.svg",
-     "height": 6,
-     "weight": 99,
-     "hp": 38,
-     "attack": 41,
-     "defense": 40,
-     "speed": 65,
-     "types": [
-       {
-         "name": "fire"
-       }
-     ]
-   },
-   {
-     "id": 38,
-     "name": "ninetales",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/38.svg",
-     "height": 11,
-     "weight": 199,
-     "hp": 73,
-     "attack": 76,
-     "defense": 75,
-     "speed": 100,
-     "types": [
-       {
-         "name": "fire"
-       }
-     ]
-   },
-   {
-     "id": 39,
-     "name": "jigglypuff",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/39.svg",
-     "height": 5,
-     "weight": 55,
-     "hp": 115,
-     "attack": 45,
-     "defense": 20,
-     "speed": 20,
-     "types": [
-       {
-         "name": "normal"
-       },
-       {
-         "name": "fairy"
-       }
-     ]
-   },
-   {
-     "id": 40,
-     "name": "wigglytuff",
-     "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/40.svg",
-     "height": 10,
-     "weight": 120,
-     "hp": 140,
-     "attack": 70,
-     "defense": 45,
-     "speed": 45,
-     "types": [
-       {
-         "name": "normal"
-       },
-       {
-         "name": "fairy"
-       }
-     ]
-   }
- ]
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg",
+    "height": 7,
+    "weight": 69,
+    "hp": 45,
+    "attack": 49,
+    "defense": 49,
+    "speed": 45,
+    "types": [
+      {
+        "name": "grass"
+      },
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "ivysaur",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg",
+    "height": 10,
+    "weight": 130,
+    "hp": 60,
+    "attack": 62,
+    "defense": 63,
+    "speed": 60,
+    "types": [
+      {
+        "name": "grass"
+      },
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "venusaur",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg",
+    "height": 20,
+    "weight": 1000,
+    "hp": 80,
+    "attack": 82,
+    "defense": 83,
+    "speed": 80,
+    "types": [
+      {
+        "name": "grass"
+      },
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "charmander",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg",
+    "height": 6,
+    "weight": 85,
+    "hp": 39,
+    "attack": 52,
+    "defense": 43,
+    "speed": 65,
+    "types": [
+      {
+        "name": "fire"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "charmeleon",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg",
+    "height": 11,
+    "weight": 190,
+    "hp": 58,
+    "attack": 64,
+    "defense": 58,
+    "speed": 80,
+    "types": [
+      {
+        "name": "fire"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "charizard",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg",
+    "height": 17,
+    "weight": 905,
+    "hp": 78,
+    "attack": 84,
+    "defense": 78,
+    "speed": 100,
+    "types": [
+      {
+        "name": "fire"
+      },
+      {
+        "name": "flying"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "squirtle",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg",
+    "height": 5,
+    "weight": 90,
+    "hp": 44,
+    "attack": 48,
+    "defense": 65,
+    "speed": 43,
+    "types": [
+      {
+        "name": "water"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "wartortle",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg",
+    "height": 10,
+    "weight": 225,
+    "hp": 59,
+    "attack": 63,
+    "defense": 80,
+    "speed": 58,
+    "types": [
+      {
+        "name": "water"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "blastoise",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/9.svg",
+    "height": 16,
+    "weight": 855,
+    "hp": 79,
+    "attack": 83,
+    "defense": 100,
+    "speed": 78,
+    "types": [
+      {
+        "name": "water"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "caterpie",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/10.svg",
+    "height": 3,
+    "weight": 29,
+    "hp": 45,
+    "attack": 30,
+    "defense": 35,
+    "speed": 45,
+    "types": [
+      {
+        "name": "bug"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "metapod",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/11.svg",
+    "height": 7,
+    "weight": 99,
+    "hp": 50,
+    "attack": 20,
+    "defense": 55,
+    "speed": 30,
+    "types": [
+      {
+        "name": "bug"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "butterfree",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/12.svg",
+    "height": 11,
+    "weight": 320,
+    "hp": 60,
+    "attack": 45,
+    "defense": 50,
+    "speed": 70,
+    "types": [
+      {
+        "name": "bug"
+      },
+      {
+        "name": "flying"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "weedle",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/13.svg",
+    "height": 3,
+    "weight": 32,
+    "hp": 40,
+    "attack": 35,
+    "defense": 30,
+    "speed": 50,
+    "types": [
+      {
+        "name": "bug"
+      },
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "kakuna",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/14.svg",
+    "height": 6,
+    "weight": 100,
+    "hp": 45,
+    "attack": 25,
+    "defense": 50,
+    "speed": 35,
+    "types": [
+      {
+        "name": "bug"
+      },
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "beedrill",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/15.svg",
+    "height": 10,
+    "weight": 295,
+    "hp": 65,
+    "attack": 90,
+    "defense": 40,
+    "speed": 75,
+    "types": [
+      {
+        "name": "bug"
+      },
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "pidgey",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/16.svg",
+    "height": 3,
+    "weight": 18,
+    "hp": 40,
+    "attack": 45,
+    "defense": 40,
+    "speed": 56,
+    "types": [
+      {
+        "name": "normal"
+      },
+      {
+        "name": "flying"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "pidgeotto",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/17.svg",
+    "height": 11,
+    "weight": 300,
+    "hp": 63,
+    "attack": 60,
+    "defense": 55,
+    "speed": 71,
+    "types": [
+      {
+        "name": "normal"
+      },
+      {
+        "name": "flying"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "pidgeot",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/18.svg",
+    "height": 15,
+    "weight": 395,
+    "hp": 83,
+    "attack": 80,
+    "defense": 75,
+    "speed": 101,
+    "types": [
+      {
+        "name": "normal"
+      },
+      {
+        "name": "flying"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "rattata",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/19.svg",
+    "height": 3,
+    "weight": 35,
+    "hp": 30,
+    "attack": 56,
+    "defense": 35,
+    "speed": 72,
+    "types": [
+      {
+        "name": "normal"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "raticate",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/20.svg",
+    "height": 7,
+    "weight": 185,
+    "hp": 55,
+    "attack": 81,
+    "defense": 60,
+    "speed": 97,
+    "types": [
+      {
+        "name": "normal"
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "spearow",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/21.svg",
+    "height": 3,
+    "weight": 20,
+    "hp": 40,
+    "attack": 60,
+    "defense": 30,
+    "speed": 70,
+    "types": [
+      {
+        "name": "normal"
+      },
+      {
+        "name": "flying"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "fearow",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/22.svg",
+    "height": 12,
+    "weight": 380,
+    "hp": 65,
+    "attack": 90,
+    "defense": 65,
+    "speed": 100,
+    "types": [
+      {
+        "name": "normal"
+      },
+      {
+        "name": "flying"
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "ekans",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/23.svg",
+    "height": 20,
+    "weight": 69,
+    "hp": 35,
+    "attack": 60,
+    "defense": 44,
+    "speed": 55,
+    "types": [
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "arbok",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/24.svg",
+    "height": 35,
+    "weight": 650,
+    "hp": 60,
+    "attack": 95,
+    "defense": 69,
+    "speed": 80,
+    "types": [
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "pikachu",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg",
+    "height": 4,
+    "weight": 60,
+    "hp": 35,
+    "attack": 55,
+    "defense": 40,
+    "speed": 90,
+    "types": [
+      {
+        "name": "electric"
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "raichu",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/26.svg",
+    "height": 8,
+    "weight": 300,
+    "hp": 60,
+    "attack": 90,
+    "defense": 55,
+    "speed": 110,
+    "types": [
+      {
+        "name": "electric"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "sandshrew",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/27.svg",
+    "height": 6,
+    "weight": 120,
+    "hp": 50,
+    "attack": 75,
+    "defense": 85,
+    "speed": 40,
+    "types": [
+      {
+        "name": "ground"
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "sandslash",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/28.svg",
+    "height": 10,
+    "weight": 295,
+    "hp": 75,
+    "attack": 100,
+    "defense": 110,
+    "speed": 65,
+    "types": [
+      {
+        "name": "ground"
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "nidoran-f",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/29.svg",
+    "height": 4,
+    "weight": 70,
+    "hp": 55,
+    "attack": 47,
+    "defense": 52,
+    "speed": 41,
+    "types": [
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "nidorina",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/30.svg",
+    "height": 8,
+    "weight": 200,
+    "hp": 70,
+    "attack": 62,
+    "defense": 67,
+    "speed": 56,
+    "types": [
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 31,
+    "name": "nidoqueen",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/31.svg",
+    "height": 13,
+    "weight": 600,
+    "hp": 90,
+    "attack": 92,
+    "defense": 87,
+    "speed": 76,
+    "types": [
+      {
+        "name": "poison"
+      },
+      {
+        "name": "ground"
+      }
+    ]
+  },
+  {
+    "id": 32,
+    "name": "nidoran-m",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/32.svg",
+    "height": 5,
+    "weight": 90,
+    "hp": 46,
+    "attack": 57,
+    "defense": 40,
+    "speed": 50,
+    "types": [
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "nidorino",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/33.svg",
+    "height": 9,
+    "weight": 195,
+    "hp": 61,
+    "attack": 72,
+    "defense": 57,
+    "speed": 65,
+    "types": [
+      {
+        "name": "poison"
+      }
+    ]
+  },
+  {
+    "id": 34,
+    "name": "nidoking",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/34.svg",
+    "height": 14,
+    "weight": 620,
+    "hp": 81,
+    "attack": 102,
+    "defense": 77,
+    "speed": 85,
+    "types": [
+      {
+        "name": "poison"
+      },
+      {
+        "name": "ground"
+      }
+    ]
+  },
+  {
+    "id": 35,
+    "name": "clefairy",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/35.svg",
+    "height": 6,
+    "weight": 75,
+    "hp": 70,
+    "attack": 45,
+    "defense": 48,
+    "speed": 35,
+    "types": [
+      {
+        "name": "fairy"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "clefable",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/36.svg",
+    "height": 13,
+    "weight": 400,
+    "hp": 95,
+    "attack": 70,
+    "defense": 73,
+    "speed": 60,
+    "types": [
+      {
+        "name": "fairy"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "name": "vulpix",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/37.svg",
+    "height": 6,
+    "weight": 99,
+    "hp": 38,
+    "attack": 41,
+    "defense": 40,
+    "speed": 65,
+    "types": [
+      {
+        "name": "fire"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "name": "ninetales",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/38.svg",
+    "height": 11,
+    "weight": 199,
+    "hp": 73,
+    "attack": 76,
+    "defense": 75,
+    "speed": 100,
+    "types": [
+      {
+        "name": "fire"
+      }
+    ]
+  },
+  {
+    "id": 39,
+    "name": "jigglypuff",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/39.svg",
+    "height": 5,
+    "weight": 55,
+    "hp": 115,
+    "attack": 45,
+    "defense": 20,
+    "speed": 20,
+    "types": [
+      {
+        "name": "normal"
+      },
+      {
+        "name": "fairy"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "wigglytuff",
+    "img": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/40.svg",
+    "height": 10,
+    "weight": 120,
+    "hp": 140,
+    "attack": 70,
+    "defense": 45,
+    "speed": 45,
+    "types": [
+      {
+        "name": "normal"
+      },
+      {
+        "name": "fairy"
+      }
+    ]
+  }
+]

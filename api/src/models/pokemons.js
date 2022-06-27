@@ -8,11 +8,11 @@ module.exports = (sequelize) => {
   sequelize.define(
     "Pokemons",
     {
-      id: {
-        type: DataTypes.UUID,
-        allowNull: false,
-        primaryKey: true
-      },
+    id:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true
+    },
       name: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -35,7 +35,11 @@ module.exports = (sequelize) => {
       },
       weight: {
         type: DataTypes.INTEGER
-      }
+      },
+      hp: { 
+        type:DataTypes.INTEGER
+      },
+       
     },
     { timestamps: false },
     { updatedAt: false },
