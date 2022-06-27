@@ -35,7 +35,6 @@ const sync = async (req, res) => {
         id: el.data.id,
         name: el.data.name,
         hp: el.data.hp,
-
         speed: el.data.speed,
         height: el.data.height,
         weight: el.data.weight,
