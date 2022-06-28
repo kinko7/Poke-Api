@@ -8,6 +8,7 @@ const consult = async (req, res) => {
     attributes: [
       "id",
       "name",
+      "speed",
       "img",
       "height",
       "weight",
@@ -15,10 +16,9 @@ const consult = async (req, res) => {
       "defense",
       "hp",
     ],
-    indclude: {
-      model: Types,
-      attributes: ["id"],
-    },
+    include: [
+      { model: Types, attributes: ["name"], through: { attributes: [] } },
+    ],
   });
   console.log("AAAA", db);
   return res.json(db);
@@ -30,23 +30,22 @@ const sync = async (req, res) => {
     let details = await Promise.all(
       urlApi.data.results.map(async (el) => await axios(el.url))
     );
-    details = await details.map((el) => {
-      return {
+    details = details.map((el) => {
+      let newPokemon = {
         id: el.data.id,
         name: el.data.name,
-        hp: el.data.hp,
         speed: el.data.speed,
         height: el.data.height,
-        weight: el.data.weight,
+        weight: el.data.wight,
         img: el.data.sprites.other.dream_world.front_default,
         attack: el.data.stats[1].base_stat,
         defense: el.data.stats[2].base_stat,
-        types: el.data.types.map((t) => {
-          return { name: t.type.name };
-        }),
       };
+      let types = el.data.types.map((el) => el.type);
+      types.map((el) => delete el.url);
+      return (newPokemon = { ...newPokemon, types: types });
     });
-    console.log("ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ", details);
+
     await Pokemons.bulkCreate(details);
 
     return res.json(details);
@@ -76,23 +75,18 @@ const getAllPokemons = async (req, res) => {
 
 const getBytype = async (req, res) => {
   const { name } = req.query;
+
   try {
-    
- const filterPoke = await Pokemons.findAll({
-  where:{ name},
-   include: {
-        model: Types,
-        attributes: ["name"],
-      },
-})
-    // pokes.map((poke) => {
-    //   return poke.types?.map((type) => {
-    //     if (type.name === name) {
-    //       filterPoke.push(poke);
-    //     }
-    //   });
-    // });
-    return res.send(filterPoke);
+    filterPoke = [];
+    pokes.map((poke) => {
+      return poke.types?.map((type) => {
+        if (type.name === name) {
+          filterPoke.push(poke);
+        }
+      });
+    });
+
+    return res.json(filterPoke);
   } catch (error) {
     console.log(error);
   }
