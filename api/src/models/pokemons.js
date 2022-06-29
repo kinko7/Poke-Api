@@ -9,9 +9,10 @@ module.exports = (sequelize) => {
     "Pokemons",
     {
     id:{
-      type: DataTypes.INTEGER,
+      type: DataTypes.STRING,
       allowNull: false,
-      primaryKey: true
+      primaryKey: true,
+   
     },
       name: {
         type: DataTypes.STRING,
@@ -38,6 +39,19 @@ module.exports = (sequelize) => {
       },
       hp: { 
         type:DataTypes.INTEGER
+      },
+      types: {
+        type: DataTypes.ARRAY(DataTypes.JSON),
+        allowNull: true,
+        defaultValue: [],
+        get() {
+          const data = this.getDataValue('types');
+          const toSend = [];
+          data.forEach(val => {
+            toSend.push(typeof val === 'string' ? JSON.parse(val) : val);
+          });
+          return toSend;
+        }
       },
        
     },
