@@ -15,10 +15,9 @@ const consult = async (req, res) => {
       "attack",
       "defense",
       "hp",
+      "types"
     ],
-    include: [
-      { model: Types, attributes: ["name"], through: { attributes: [] } },
-    ],
+    
   });
   console.log("AAAA", db);
   return res.json(db);
@@ -33,10 +32,11 @@ const sync = async (req, res) => {
     details = details.map((el) => {
       let newPokemon = {
         id: el.data.id,
+        hp: el.data.hp,
         name: el.data.name,
         speed: el.data.speed,
         height: el.data.height,
-        weight: el.data.wight,
+        weight: el.data.weight,
         img: el.data.sprites.other.dream_world.front_default,
         attack: el.data.stats[1].base_stat,
         defense: el.data.stats[2].base_stat,
@@ -74,17 +74,18 @@ const getAllPokemons = async (req, res) => {
 };
 
 const getBytype = async (req, res) => {
-  const { name } = req.query;
+  const { types } = req.query;
 
   try {
-    filterPoke = [];
-    pokes.map((poke) => {
-      return poke.types?.map((type) => {
-        if (type.name === name) {
-          filterPoke.push(poke);
-        }
-      });
+ 
+    const filterPoke= await Pokemons.findAll({
+      where:{types},
+      through:  {
+        attributes: [types ]
+      },
     });
+
+    // filter= filterPoke.map((e)=>e.name === e.types)
 
     return res.json(filterPoke);
   } catch (error) {
