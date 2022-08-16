@@ -5,7 +5,7 @@ const { conn } = require("./src/db.js");
 
 
 // Sincronizo los modelos
-conn.sync({ truncate : false}).then(() => {
+conn.sync({ truncate : true}).then(() => {
   server.listen(3001, () => {    
     console.log("%s listening at 3001");  
   });

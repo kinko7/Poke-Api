@@ -1,91 +1,106 @@
 const { Pokemons, Types } = require("../db");
 const axios = require("axios");
 const { uuid: v4 } = require("uuidv4");
-const pokes = require("../json/apiPoke.json");
+
 
 const consult = async (req, res) => {
-  const db = await Pokemons.findAll({
-    attributes: [
-      "id",
-      "name",
-      "speed",
-      "img",
-      "height",
-      "weight",
-      "attack",
-      "defense",
-      "hp",
-      "types"
-    ],
-    
+   const db = await Pokemons.findAll({
+  
   });
+
+  if(db.length <= 0) return res.send("no data")
   console.log("AAAA", db);
   return res.json(db);
 };
 
-const sync = async (req, res) => {
-  try {
-    const urlApi = await axios.get("http://pokeapi.co/api/v2/pokemon?limit=5");
+
+const getApiInfo = async (req,res) => {
+  
+  const urlApi = await axios.get("http://pokeapi.co/api/v2/pokemon?limit=5");
     let details = await Promise.all(
       urlApi.data.results.map(async (el) => await axios(el.url))
     );
-    details = details.map((el) => {
-      let newPokemon = {
-        id: el.data.id,
-        hp: el.data.hp,
-        name: el.data.name,
-        speed: el.data.speed,
-        height: el.data.height,
-        weight: el.data.weight,
-        img: el.data.sprites.other.dream_world.front_default,
-        attack: el.data.stats[1].base_stat,
-        defense: el.data.stats[2].base_stat,
-      };
-      let types = el.data.types.map((el) => el.type);
-      types.map((el) => delete el.url);
-      return (newPokemon = { ...newPokemon, types: types });
-    });
+    details = await details.map((el) => {
+    return {
+      id: el.data.id,
+      name: el.data.name,
+      hp:el.data.hp,
+      defense: el.data.stats[2].base_stat,
+      speed: el.data.stats[5].base_stat,
+      height: el.data.height,
+      weight: el.data.weight,
+      image: el.data.sprites.other.dream_world.front_default,
+      types: el.data.types.map((el) => {
+        return {
+          name: el.type.name,
+        };
+      }),
+    };
+  });
+  console.log(details)
 
-    await Pokemons.bulkCreate(details);
+  return details
+}
+ 
 
-    return res.json(details);
-  } catch (error) {
-    console.log(error);
-  }
+
+const getDbInfo = async (req,res) => {
+const infoDb= await Pokemons.findAll({
+    include: {
+      model: Types,
+      attributes: ["name"],
+    },
+  });
+
+  return infoDb
 };
 
-const getAllPokemons = async (req, res) => {
-  let name = req.query.name;
+const getAllPokemons = async (req,res) => {
+  const {name} = req.query
+  const apiInfo = await getApiInfo();
+  const dbInfo = await getDbInfo();
+  const infoTotal = await apiInfo.concat(dbInfo);
+  
+ 
+  if (name) {
+    let pokemonName = await infoTotal.filter(
+      (el) => el.name.toLowerCase() === name.toLocaleLowerCase()
+    );
+    
+    return res.json(pokemonName)
+    
+    }else{ 
+ 
+  return  res.json(infoTotal)
+
+  }
+}
+  
+
+const sync= async(req,res)=> {
+
   try {
-    let pokemon = {};
-    pokemon = await Pokemons.findOne({
-      indclude: {
-        model: Types,
-        attributes: ["name"],
-      },
-    });
-    if (!name) {
-      const db = await Pokemons.findAll({});
-      return res.json(db);
-    }
+    const pokemonInfoTotal = await getAllPokemons();
+  
+      return await Pokemons.bulkCreate(pokemonInfoTotal)
+ 
   } catch (error) {
-    console.log(error);
+    console.log(error)
   }
-};
+
+}
+ 
 
 const getBytype = async (req, res) => {
   const { types } = req.query;
 
   try {
- 
-    const filterPoke= await Pokemons.findAll({
+     const filterPoke= await Pokemons.findAll({
       where:{types},
       through:  {
         attributes: [types ]
       },
     });
-
-    // filter= filterPoke.map((e)=>e.name === e.types)
 
     return res.json(filterPoke);
   } catch (error) {

@@ -1,5 +1,4 @@
 const { Pokemons, Types } = require("../db");
-const axios = require("axios");
 const { v4: uuidv4 } = require("uuid");
 
 const getPokeById = async (req, res) => {
@@ -19,14 +18,14 @@ const getPokeById = async (req, res) => {
 };
 
 const createPoke = async (req, res) => {
-  let { id, name, img, attack, defense, hp, speed, height, weight, types } =
+  let { name, img, attack, defense, hp, speed, height, weight, types } =
     req.body;
   try {
-    if (!name) return res.status(404).json("Invalid Name");
+    if (!name) return res.status(404).send("Invalid Name");
 
     name = name.toLowerCase();
-    let newPokemon = await Pokemons.create({
-      id,
+    const newPokemon = await Pokemons.create({
+      id: uuidv4(),
       name,
       img,
       attack,
@@ -37,7 +36,7 @@ const createPoke = async (req, res) => {
       types,
       hp,
     });
-    newPokemon.setTypes(types);
+    newPokemon.addTypes(types);
     res.json(newPokemon);
   } catch (error) {
     console.log(error);
@@ -72,14 +71,16 @@ const deletePoke = async (req, res) => {
   try {
     await Pokemons.destroy({
       where: {
-        id,
+        id:id,
       },
     });
     return res.send("DELETE");
   } catch (error) {
-    return res.status(500).json("Can´t Delete");
+    next(error)
   }
-};
+
+}
+
 
 module.exports = {
   createPoke,

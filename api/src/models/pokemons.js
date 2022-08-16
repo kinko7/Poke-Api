@@ -9,7 +9,7 @@ module.exports = (sequelize) => {
     "Pokemons",
     {
     id:{
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
    
@@ -40,19 +40,19 @@ module.exports = (sequelize) => {
       hp: { 
         type:DataTypes.INTEGER
       },
-      types: {
-        type: DataTypes.ARRAY(DataTypes.JSON),
-        allowNull: true,
-        defaultValue: [],
-        get() {
-          const data = this.getDataValue('types');
-          const toSend = [];
-          data.forEach(val => {
-            toSend.push(typeof val === 'string' ? JSON.parse(val) : val);
-          });
-          return toSend;
-        }
-      },
+      // types: {
+      //   type: DataTypes.ARRAY(DataTypes.JSON),
+      //   allowNull: true,
+      //   defaultValue: [],
+      //   get() {
+      //     const data = this.getDataValue('types');
+      //     const toSend = [];
+      //     data.forEach(val => {
+      //       toSend.push(typeof val === 'string' ? JSON.parse(val) : val);
+      //     });
+      //     return toSend;
+      //   }
+      // },
        
     },
     { timestamps: false },

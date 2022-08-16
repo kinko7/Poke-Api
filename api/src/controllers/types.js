@@ -9,14 +9,14 @@ const getTypes = async (req, res) => {
     if (dbTypes.length === 0) {
       let response = await axios.get("https://pokeapi.co/api/v2/type");
       var types = response.data.results.map((el) => {
-        return { name: el.name };
+        return { name: el.name, id: el.id};
       });
 
       Types.bulkCreate(types);
       return res.json(types);
-    }
+    } 
 
-    res.json(dbTypes);
+    return res.json(dbTypes);
   } catch (error) {
     console.log(error);
   }

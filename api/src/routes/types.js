@@ -3,6 +3,6 @@ const { getTypes } = require("../controllers/types.js");
 
 const router = Router();
 
-router.get("/pokemons/types", getTypes);
+router.get("/types", getTypes);
 
 module.exports = router;
