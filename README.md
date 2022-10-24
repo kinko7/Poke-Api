@@ -1,6 +1,11 @@
 # Back Poke Api
 
-# CRUD REST API  with Node.js, Express, Sequelize ORM and PostgreSQL
+# COMPLETE CRUD with Node.js,Express, PostgreSQL and Sequelize ORM. 
+_Get
+_Post
+_Update
+_Delete
+
 
 First clone the repository on your local machine-
 
