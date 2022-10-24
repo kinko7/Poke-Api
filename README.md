@@ -1,4 +1,4 @@
-# PokemonApi
+# Back Poke Api
 
 # CRUD REST API  with Node.js, Express, Sequelize ORM and PostgreSQL
 
